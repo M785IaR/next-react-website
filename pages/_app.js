@@ -1,3 +1,4 @@
+import 'styles/globals.css'
 import Layout from 'components/hero'
 
 function MyApp({ Component, pageProps }) {
