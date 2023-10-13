@@ -1,5 +1,9 @@
-import '@/styles/globals.css'
+import Layout from 'components/hero'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+    return (
+        <Component {...pageProps}/>
+    )
 }
+
+export default MyApp
