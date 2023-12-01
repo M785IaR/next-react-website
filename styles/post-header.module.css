@@ -18,5 +18,6 @@
 .publish{
     display: flex;
     gap: 0.5em;
-    color: var(--small-heading3);
+    color: var(--gray-50);
+    font-size: var(--small-heading3);
 }
