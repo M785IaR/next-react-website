@@ -1,4 +1,5 @@
 import { getAllPosts } from 'lib/api'
+import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from "components/hero"
 import Posts from 'components/posts'
@@ -34,7 +35,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            posts: posts;
+            posts: posts,
         },
     }
 }
