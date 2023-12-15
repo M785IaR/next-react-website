@@ -47,6 +47,24 @@
     width: 32px;
     height: 1px;
     background-color: currentColor;
+    transition: transform 0.4s;
+}
+
+.close .btn::before{
+    transform: translateY(-8px);
+}
+.close .btn::after{
+    transform: translateY(8px);
+}
+
+.open .btn::before{
+    transform: rotate(45deg);
+}
+.open .btn::after{
+    transform: rotate(-45deg);
+}
+.open .btn .bar{
+    transform: scale(0);
 }
 
 /* メニュー（オーバーレイ） */
