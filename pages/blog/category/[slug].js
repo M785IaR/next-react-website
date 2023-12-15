@@ -38,6 +38,7 @@ export async function getStaticProps(context) {
         if (!post.hasOwnProperty('eyecatch')) {
             post.eyecatch = eyecatchLocal
         }
+        console.log(post.eyecatch.url);
         const { base64 } = await getPlaiceholder(post.eyecatch.url)
         post.eyecatch.blurDataURL = base64
     }

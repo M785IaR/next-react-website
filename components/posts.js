@@ -10,13 +10,11 @@ export default function Posts({ posts }) {
                 return (
                     <article className={styles.post} key={slug}>
                         <Link href={`/blog/${slug}`}>
-                            <a>
                                 <figure>
                                     <Image
                                         src={eyecatch.url}
                                         alt=""
                                         layout="fill"
-                                        width={eyecatch.width}
                                         objectFit='cover'
                                         sizes="(min-width: 1152px) 576px, 50vw"
                                         placeholder="blur"
@@ -24,7 +22,6 @@ export default function Posts({ posts }) {
                                     />
                                 </figure>
                                 <h2>{title}</h2>
-                            </a>
                         </Link>
                     </article>
                 );

@@ -8,6 +8,7 @@ import { getAllPosts } from 'lib/api';
 //ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants";
 
+// Blogコンポーネント
 export default function Blog({ posts }) {
     return (
     <Container>
@@ -19,6 +20,7 @@ export default function Blog({ posts }) {
     );
 }
 
+// getStaticProps
 export async function getStaticProps() {
 const posts = await getAllPosts()
 
