@@ -7,6 +7,7 @@ import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-colum
 import Accordion from 'components/accordion'
 import Image from 'next/image'
 import eyecatch from 'images/about.jpg'
+
 export default function About() {
     return (
         <Container>
